@@ -8,16 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
         <module name="microservicio_ejemplo" />
+        <module name="microservicio_cursos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="17" />
+      <module name="microservicio_cursos" target="17" />
       <module name="microservicio_ejemplo" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="microservicio_cursos" options="-parameters" />
       <module name="microservicio_ejemplo" options="-parameters" />
     </option>
   </component>
