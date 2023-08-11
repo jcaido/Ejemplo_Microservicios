@@ -4,6 +4,7 @@ import com.jcaido.microservicio_cursos.model.Curso;
 import jakarta.annotation.PostConstruct;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -32,5 +33,17 @@ public class CursoController {
     @GetMapping(value = "cursos", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Curso> cursos() {
         return cursos;
+    }
+
+    @GetMapping(value = "curso/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Curso> buscarCurso(@PathVariable("name") String nombre) {
+        List<Curso> aux = new ArrayList<>();
+        for (Curso curso: cursos) {
+            if (curso.getNombre().contains(nombre)) {
+                aux.add(curso);
+            }
+        }
+
+        return aux;
     }
 }
