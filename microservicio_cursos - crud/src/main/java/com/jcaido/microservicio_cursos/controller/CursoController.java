@@ -57,4 +57,15 @@ public class CursoController {
         return cursos;
     }
 
+    @PutMapping(value = "curso", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Curso> modificaCurso(Curso curso) {
+        for (int i = 0; i < cursos.size(); i++) {
+            if (cursos.get(i).getNombre().equals(curso.getNombre())) {
+                cursos.set(i, curso);
+            }
+        }
+
+        return cursos;
+    }
+
 }
