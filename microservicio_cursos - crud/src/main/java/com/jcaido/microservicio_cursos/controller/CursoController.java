@@ -3,10 +3,7 @@ package com.jcaido.microservicio_cursos.controller;
 import com.jcaido.microservicio_cursos.model.Curso;
 import jakarta.annotation.PostConstruct;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,4 +49,12 @@ public class CursoController {
     public void eliminarCurso(@PathVariable("name") String nombre) {
         cursos.removeIf(curso -> curso.getNombre().equals(nombre));
     }
+
+    @PostMapping(value = "curso", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Curso> altaCurso(@RequestBody Curso curso) {
+        cursos.add(curso);
+
+        return cursos;
+    }
+
 }
