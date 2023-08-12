@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="microservicio_cursos (1)" />
         <module name="demo" />
         <module name="microservicio_ejemplo" />
         <module name="microservicio_cursos" />
@@ -14,6 +15,7 @@
     <bytecodeTargetLevel>
       <module name="demo" target="17" />
       <module name="microservicio_cursos" target="17" />
+      <module name="microservicio_cursos (1)" target="17" />
       <module name="microservicio_ejemplo" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -21,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
       <module name="microservicio_cursos" options="-parameters" />
+      <module name="microservicio_cursos (1)" options="-parameters" />
       <module name="microservicio_ejemplo" options="-parameters" />
     </option>
   </component>
