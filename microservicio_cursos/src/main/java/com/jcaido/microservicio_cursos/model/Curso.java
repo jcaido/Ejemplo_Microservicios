@@ -1,5 +1,8 @@
 package com.jcaido.microservicio_cursos.model;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+
+@JacksonXmlRootElement
 public class Curso {
 
     private String nombre;

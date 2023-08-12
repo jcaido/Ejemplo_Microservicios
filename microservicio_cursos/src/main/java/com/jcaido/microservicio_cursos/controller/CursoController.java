@@ -30,7 +30,7 @@ public class CursoController {
         return new Curso("Java", 20, "mañana");
     }
 
-    @GetMapping(value = "cursos", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "cursos", produces = MediaType.APPLICATION_XML_VALUE)
     public List<Curso> cursos() {
         return cursos;
     }
