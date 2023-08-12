@@ -16,7 +16,7 @@ public class CursoController {
     @PostConstruct
     public void init() {
         cursos.add(new Curso("Spring", 40, "mañana"));
-        cursos.add(new Curso("Spring boot", 150, "tarde"));
+        cursos.add(new Curso("JavaEE", 200, "mañana"));
         cursos.add(new Curso("Spring boot", 150, "tarde"));
         cursos.add(new Curso("PhP", 50, "tarde"));
         cursos.add(new Curso("Node.js", 15, "mañana"));
@@ -58,7 +58,7 @@ public class CursoController {
     }
 
     @PutMapping(value = "curso", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Curso> modificaCurso(Curso curso) {
+    public List<Curso> modificaCurso(@RequestBody Curso curso) {
         for (int i = 0; i < cursos.size(); i++) {
             if (cursos.get(i).getNombre().equals(curso.getNombre())) {
                 cursos.set(i, curso);
