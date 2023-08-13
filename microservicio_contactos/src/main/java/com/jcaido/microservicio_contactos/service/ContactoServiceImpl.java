@@ -12,7 +12,12 @@ public class ContactoServiceImpl implements ContactoService{
     ContactoRepository contactoRepository;
 
     @Override
-    public void agregarContacto(Contacto contacto) {
-        contactoRepository.save(contacto);
+    public boolean agregarContacto(Contacto contacto) {
+        if (contactoRepository.findById(contacto.getIdContacto()) == null) {
+            contactoRepository.save(contacto);
+            return true;
+        }
+
+        return false;
     }
 }

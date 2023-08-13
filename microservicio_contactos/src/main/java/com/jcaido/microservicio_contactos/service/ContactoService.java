@@ -4,5 +4,5 @@ import com.jcaido.microservicio_contactos.model.Contacto;
 
 public interface ContactoService {
 
-    void agregarContacto(Contacto contacto);
+    boolean agregarContacto(Contacto contacto);
 }
