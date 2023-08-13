@@ -4,12 +4,12 @@ import com.jcaido.microservicio_contactos.model.Contacto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+@Repository
 public interface ContactoRepository extends JpaRepository<Contacto, Integer> {
-
     Contacto findByEmail(String email);
-
     @Transactional
     @Modifying
     @Query("Delete from Contacto c Where c.email=?1")
