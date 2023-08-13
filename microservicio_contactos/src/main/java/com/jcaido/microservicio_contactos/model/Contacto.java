@@ -10,27 +10,27 @@ public class Contacto implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idContacto;
-    private int edad;
+    private Integer idContacto;
+    private Integer edad;
     private String email;
     private String nombre;
 
     public Contacto() {
     }
 
-    public int getIdContacto() {
+    public Integer getIdContacto() {
         return idContacto;
     }
 
-    public void setIdContacto(int idContacto) {
+    public void setIdContacto(Integer idContacto) {
         this.idContacto = idContacto;
     }
 
-    public int getEdad() {
+    public Integer getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(Integer edad) {
         this.edad = edad;
     }
 
