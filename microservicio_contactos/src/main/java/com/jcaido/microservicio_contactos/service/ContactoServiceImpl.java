@@ -27,4 +27,9 @@ public class ContactoServiceImpl implements ContactoService{
     public List<Contacto> recuperarContactos() {
         return contactoRepository.findAll();
     }
+
+    @Override
+    public Contacto buscarContacto(Integer idContacto) {
+        return contactoRepository.findById(idContacto).orElseThrow();
+    }
 }

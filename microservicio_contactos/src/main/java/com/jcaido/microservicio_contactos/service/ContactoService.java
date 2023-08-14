@@ -8,4 +8,6 @@ public interface ContactoService {
 
     boolean agregarContacto(Contacto contacto);
     List<Contacto> recuperarContactos();
+
+    Contacto buscarContacto(Integer idContacto);
 }
