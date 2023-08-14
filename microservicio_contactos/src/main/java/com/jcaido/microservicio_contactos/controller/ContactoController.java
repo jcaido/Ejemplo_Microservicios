@@ -29,4 +29,9 @@ public class ContactoController {
     public Contacto obtenerContactoPorId(@PathVariable("id") Integer idContacto) {
         return contactoService.buscarContacto(idContacto);
     }
+
+    @PutMapping(value = "contactos", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
+    public String modificarContacto(@RequestBody Contacto contacto) {
+        return String.valueOf(contactoService.modificarContacto(contacto));
+    }
 }
