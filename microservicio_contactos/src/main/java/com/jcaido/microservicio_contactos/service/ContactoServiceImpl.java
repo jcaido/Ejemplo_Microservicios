@@ -5,6 +5,8 @@ import com.jcaido.microservicio_contactos.repository.ContactoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ContactoServiceImpl implements ContactoService{
 
@@ -19,5 +21,10 @@ public class ContactoServiceImpl implements ContactoService{
         }
 
         return false;
+    }
+
+    @Override
+    public List<Contacto> recuperarContactos() {
+        return contactoRepository.findAll();
     }
 }
