@@ -46,4 +46,14 @@ public class ContactoServiceImpl implements ContactoService{
         contactoRepository.save(contactoAActualizar.orElseThrow());
         return true;
     }
+
+    @Override
+    public boolean eliminarContacto(String email) {
+        Contacto contactoAEliminar = contactoRepository.findByEmail(email);
+
+        if (contactoAEliminar == null) return false;
+
+        contactoRepository.eliminarContactoPorEmail(email);
+        return true;
+    }
 }

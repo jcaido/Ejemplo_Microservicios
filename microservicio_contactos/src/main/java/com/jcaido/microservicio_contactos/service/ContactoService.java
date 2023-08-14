@@ -10,4 +10,5 @@ public interface ContactoService {
     List<Contacto> recuperarContactos();
     Contacto buscarContacto(Integer idContacto);
     boolean modificarContacto(Contacto contacto);
+    boolean eliminarContacto(String email);
 }
