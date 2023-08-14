@@ -13,7 +13,7 @@ public class ContactoServiceImpl implements ContactoService{
 
     @Override
     public boolean agregarContacto(Contacto contacto) {
-        if (contactoRepository.findById(contacto.getIdContacto()) == null) {
+        if (contacto.getIdContacto() == null)  {
             contactoRepository.save(contacto);
             return true;
         }
