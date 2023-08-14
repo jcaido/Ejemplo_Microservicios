@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ContactoServiceImpl implements ContactoService{
@@ -31,5 +32,18 @@ public class ContactoServiceImpl implements ContactoService{
     @Override
     public Contacto buscarContacto(Integer idContacto) {
         return contactoRepository.findById(idContacto).orElseThrow();
+    }
+
+    @Override
+    public boolean modificarContacto(Contacto contacto) {
+        Optional<Contacto> contactoAActualizar = contactoRepository.findById(contacto.getIdContacto());
+
+        if (!contactoAActualizar.isPresent()) return false;
+
+        contactoAActualizar.orElseThrow().setEdad(contacto.getEdad());
+        contactoAActualizar.orElseThrow().setEmail(contacto.getEmail());
+        contactoAActualizar.orElseThrow().setNombre(contacto.getNombre());
+        contactoRepository.save(contactoAActualizar.orElseThrow());
+        return true;
     }
 }
