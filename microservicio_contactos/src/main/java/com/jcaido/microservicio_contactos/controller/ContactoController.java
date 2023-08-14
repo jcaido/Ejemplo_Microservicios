@@ -5,10 +5,7 @@ import com.jcaido.microservicio_contactos.service.ContactoService;
 import jakarta.persistence.GeneratedValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,5 +23,10 @@ public class ContactoController {
     @GetMapping(value = "contactos", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Contacto> obtenerTodosLosContactos() {
         return contactoService.recuperarContactos();
+    }
+
+    @GetMapping(value = "contacto/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Contacto obtenerContactoPorId(@PathVariable("id") Integer idContacto) {
+        return contactoService.buscarContacto(idContacto);
     }
 }
