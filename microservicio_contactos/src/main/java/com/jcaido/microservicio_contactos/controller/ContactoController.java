@@ -34,4 +34,9 @@ public class ContactoController {
     public String modificarContacto(@RequestBody Contacto contacto) {
         return String.valueOf(contactoService.modificarContacto(contacto));
     }
+
+    @DeleteMapping(value = "contacto/{email}", produces = MediaType.TEXT_PLAIN_VALUE)
+    public String eliminarContacto(@PathVariable String email) {
+        return String.valueOf(contactoService.eliminarContacto(email));
+    }
 }
