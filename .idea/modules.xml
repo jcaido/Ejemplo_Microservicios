@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EjemploMicroservicios.iml" filepath="$PROJECT_DIR$/EjemploMicroservicios.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservicio_cliente_contactos/microservicio_cliente_contactos.iml" filepath="$PROJECT_DIR$/microservicio_cliente_contactos/microservicio_cliente_contactos.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservicio_contactos/microservicio_contactos.iml" filepath="$PROJECT_DIR$/microservicio_contactos/microservicio_contactos.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservicio_cursos/microservicio_cursos.iml" filepath="$PROJECT_DIR$/microservicio_cursos/microservicio_cursos.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservicio_cursos - crud/microservicio_cursos (1).iml" filepath="$PROJECT_DIR$/microservicio_cursos - crud/microservicio_cursos (1).iml" />
