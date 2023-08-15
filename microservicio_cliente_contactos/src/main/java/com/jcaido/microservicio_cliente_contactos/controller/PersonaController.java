@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 public class PersonaController {
@@ -30,5 +31,16 @@ public class PersonaController {
         Persona[] personas = template.getForObject(url + "/contactos", Persona[].class);
 
         return Arrays.asList(personas);
+    }
+
+    @GetMapping(value = "personas/{edad1}/{edad2}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Persona> obtenerPersonasPorEdades(
+            @PathVariable("edad1") Integer edad1,
+            @PathVariable("edad2") Integer edad2) {
+
+        Persona[] personas = template.getForObject(url + "/contactos", Persona[].class);
+        return Arrays.stream(personas)
+                .filter(persona->persona.getEdad() >= edad1 && persona.getEdad()<= edad2)
+                .collect(Collectors.toList());
     }
 }
