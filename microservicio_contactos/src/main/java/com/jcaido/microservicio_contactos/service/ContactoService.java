@@ -7,7 +7,7 @@ import java.util.List;
 public interface ContactoService {
 
     boolean agregarContacto(Contacto contacto);
-    List<Contacto> recuperarContactos();
+    List<Contacto> recuperarContactos() throws InterruptedException;
     Contacto buscarContacto(Integer idContacto);
     boolean modificarContacto(Contacto contacto);
     boolean eliminarContacto(String email);

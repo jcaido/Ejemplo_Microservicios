@@ -25,7 +25,8 @@ public class ContactoServiceImpl implements ContactoService{
     }
 
     @Override
-    public List<Contacto> recuperarContactos() {
+    public List<Contacto> recuperarContactos() throws InterruptedException {
+        Thread.sleep(8000);
         return contactoRepository.findAll();
     }
 
