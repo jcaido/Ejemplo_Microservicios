@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/demo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicio_cliente_contactos/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicio_cliente_contactos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicio_cliente_contactos_asincrono/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicio_cliente_contactos_asincrono/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicio_contactos/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicio_contactos/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicio_cursos - crud/src/main/java" charset="UTF-8" />
