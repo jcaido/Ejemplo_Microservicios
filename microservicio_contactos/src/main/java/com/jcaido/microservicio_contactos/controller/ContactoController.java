@@ -21,7 +21,7 @@ public class ContactoController {
     }
 
     @GetMapping(value = "contactos", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<Contacto> obtenerTodosLosContactos() {
+    public List<Contacto> obtenerTodosLosContactos() throws InterruptedException {
         return contactoService.recuperarContactos();
     }
 
