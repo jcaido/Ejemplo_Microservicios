@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="microservicio_contactos" />
+        <module name="microservicio_cliente_paises" />
         <module name="microservicio_ejemplo" />
         <module name="microservicio_cliente_contactos_asincrono" />
         <module name="microservicio_cliente_contactos" />
@@ -19,6 +20,7 @@
       <module name="demo" target="17" />
       <module name="microservicio_cliente_contactos" target="17" />
       <module name="microservicio_cliente_contactos_asincrono" target="17" />
+      <module name="microservicio_cliente_paises" target="17" />
       <module name="microservicio_contactos" target="17" />
       <module name="microservicio_cursos" target="17" />
       <module name="microservicio_cursos_crud" target="17" />
@@ -30,6 +32,7 @@
       <module name="demo" options="-parameters" />
       <module name="microservicio_cliente_contactos" options="-parameters" />
       <module name="microservicio_cliente_contactos_asincrono" options="-parameters" />
+      <module name="microservicio_cliente_paises" options="-parameters" />
       <module name="microservicio_contactos" options="-parameters" />
       <module name="microservicio_cursos" options="-parameters" />
       <module name="microservicio_cursos_crud" options="-parameters" />
