@@ -30,13 +30,19 @@ public class PaisesServiceImpl implements PaisesService{
         ArrayNode array = (ArrayNode) mapper.readTree(resultado);
         for (Object ob:array) {
             ObjectNode json = (ObjectNode) ob;
-            paises.add(new Pais(
-                    json.get("name)").asText(),
-                    json.get("capital").asText(),
-                    json.get("population").asInt(),
-                    json.get("flag").asText()
-                    )
-            );
+            if (json.get("capital") == null) {
+                paises.add(new Pais(
+                                json.get("name").get("official").asText(),
+                                "",
+                                json.get("population").asInt(),
+                                json.get("flags").get("svg").asText()));
+            } else {
+                paises.add(new Pais(
+                        json.get("name").get("official").asText(),
+                        json.get("capital").get(0).asText(),
+                        json.get("population").asInt(),
+                        json.get("flags").get("svg").asText()));
+            }
         };
 
         return paises;
