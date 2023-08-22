@@ -17,5 +17,7 @@
     <file url="file://$PROJECT_DIR$/microservicio_cursos/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicio_ejemplo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicio_ejemplo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/servidor_eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/servidor_eureka/src/main/resources" charset="UTF-8" />
   </component>
 </project>

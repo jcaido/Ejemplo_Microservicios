@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/microservicio_cursos/microservicio_cursos.iml" filepath="$PROJECT_DIR$/microservicio_cursos/microservicio_cursos.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservicio_cursos - crud/microservicio_cursos_crud.iml" filepath="$PROJECT_DIR$/microservicio_cursos - crud/microservicio_cursos_crud.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservicio_ejemplo/microservicio_ejemplo.iml" filepath="$PROJECT_DIR$/microservicio_ejemplo/microservicio_ejemplo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servidor_eureka/servidor_eureka.iml" filepath="$PROJECT_DIR$/servidor_eureka/servidor_eureka.iml" />
     </modules>
   </component>
 </project>

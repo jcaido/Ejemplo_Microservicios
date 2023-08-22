@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/microservicio_cliente_contactos/pom.xml" />
         <option value="$PROJECT_DIR$/microservicio_cliente_contactos_asincrono/pom.xml" />
         <option value="$PROJECT_DIR$/microservicio_cliente_paises/pom.xml" />
+        <option value="$PROJECT_DIR$/servidor_eureka/pom.xml" />
       </list>
     </option>
   </component>

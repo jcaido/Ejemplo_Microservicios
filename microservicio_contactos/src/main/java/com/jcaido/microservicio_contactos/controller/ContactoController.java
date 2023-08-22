@@ -2,7 +2,6 @@ package com.jcaido.microservicio_contactos.controller;
 
 import com.jcaido.microservicio_contactos.model.Contacto;
 import com.jcaido.microservicio_contactos.service.ContactoService;
-import jakarta.persistence.GeneratedValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
