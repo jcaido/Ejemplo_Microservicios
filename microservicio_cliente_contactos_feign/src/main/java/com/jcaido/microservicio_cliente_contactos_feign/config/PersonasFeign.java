@@ -13,7 +13,7 @@ import java.util.List;
 public interface PersonasFeign {
 
     @GetMapping(value = "contactos", produces = MediaType.APPLICATION_JSON_VALUE)
-    List<Persona> getPersona();
+    List<Persona> getPersonas();
 
     @PostMapping(value = "contactos", consumes = MediaType.APPLICATION_JSON_VALUE)
     void altaPersona(@RequestBody Persona persona);
