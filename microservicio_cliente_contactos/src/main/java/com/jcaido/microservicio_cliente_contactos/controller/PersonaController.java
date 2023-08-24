@@ -18,7 +18,7 @@ public class PersonaController {
     @Autowired
     RestTemplate template;
 
-    String url = "http://localhost:8080";
+    String url = "http://servicio-contactos";
 
     @GetMapping(value = "persona/{nombre}/{email}/{edad}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Persona> altaPersona(
